@@ -33,4 +33,19 @@ predict(simp,new)
 predict(simp,new,se.fit=TRUE)
 ```
 ## Surely there is another variable that can better predict LENGTH than NECK. Find one and compare its performance to that of neck by it value of Adjusted-Rsquared (bigger is better).
+```{r}
+simp <- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+The standard error in the graphs, neck and weight  shows that the graph with neck is better with lest errors. Not only that but having less errors helps when trying to acutely decide things.
+
+
+
+
+
+
+
 
