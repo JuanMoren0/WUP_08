@@ -51,6 +51,16 @@ summary.lm(simp)
 ```
 the standard error, and r-squared numbers are either too high or too low, to accurately, tell if this is the best way to find our answers. Will need to find another way.  
 
+```{r}
+simp <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+
+Even comparing with head width, it shows that its still not as good as comparing with neck. 
+
+
 
 
 
