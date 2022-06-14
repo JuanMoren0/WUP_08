@@ -60,6 +60,18 @@ summary.lm(simp)
 
 Even comparing with head width, it shows that its still not as good as comparing with neck. 
 
+```{r}
+simp <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+In this graph the dots are closer to the line and the   residuals standard error are closer to o as well as our   adjusted R-squared is higher, meaning that head length is better to compare then the others  
+
+
+
+## Conclusion
+To conclude when trying to find information to help   predict what a bear's length is, is to compare the   bear's head length.
 
 
 
