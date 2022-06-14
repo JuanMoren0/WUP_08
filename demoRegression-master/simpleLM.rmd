@@ -43,8 +43,13 @@ summary.lm(simp)
 The standard error in the graphs, neck and weight  shows that the graph with neck is better with lest errors. Not only that but having less errors helps when trying to acutely decide things.
 
 
-
-
+```{r}
+simp <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(simp)
+summary.lm(simp)
+```
+the standard error, and r-squared numbers are either too high or too low, to accurately, tell if this is the best way to find our answers. Will need to find another way.  
 
 
 
